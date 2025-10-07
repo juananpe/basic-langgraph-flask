@@ -48,7 +48,7 @@ This example extends the previous one by adding an interrupt node that requires 
 
 ## Ejercicio 2
 
-Indica la secuencia de comandos curl para probar el endpoint /start con un mensaje que active el interruptor y luego apruebe la solicitud.
+Indica la secuencia de comandos curl para probar el endpoint /start con un mensaje que active el interrupt y luego apruebe la solicitud.
 
 # LangGraph Flask Example 3
 
