@@ -36,7 +36,7 @@ python app.py
 En otra terminal, puedes probar el endpoint de chat usando curl:
 
 ```bash
-curl -X POST http://localhost:5000/chat \
+curl -X POST http://localhost:5001/chat \
   -H "Content-Type: application/json" \
   -d '{"user_id": "user_001", "message": "¡Hola!"}'
 ```
