@@ -82,3 +82,5 @@ Este ejemplo combina nodos con interrupt() y Command para crear un flujo de trab
 ## Ejercicio 4
 * Indica la secuencia de comandos curl para probar el agente.
 * ¿Qué ocurre si el mensaje de aprobación es "approve" y a continuación se vuelve a enviar el mismo mensaje con un "reject"? ¿Por qué ocurre esto?
+
+* Genera un nuevo endpoint /status que devuelva el nodo en el que se ha quedado el agente. Consulta https://reference.langchain.com/python/langgraph/graphs/ para conocer qué metodo podemos usar
