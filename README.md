@@ -23,14 +23,14 @@ Crea un entorno virtual e instala las dependencias:
 
 ```bash
 uv venv
-source venv/bin/activate
+source venv/bin/activate # en Windows usa `venv\Scripts\activate`
 uv pip install -r requirements.txt
 ```
 
 Ejecuta la aplicación Flask:
 
 ```bash
-python app.py
+python example.py
 ```
 
 En otra terminal, puedes probar el endpoint de chat usando curl:
@@ -44,6 +44,22 @@ curl -X POST http://localhost:5001/chat \
 ## Ejercicio 1
 
 - Modifica el código para que el agente recuerde el contexto de la conversación anterior incluso si el servidor se reinicia.
+
+El objetivo es que el agente ejecutado tras la aplicación web recuerde nuestro nombre:
+
+```bash
+curl -X POST http://localhost:5001/chat -H "Content-Type: application/json" -d '{"user_id": "test", "message": "Hi, I am Juanan"}'
+{
+  "reply": "Hello Juanan! How can I assist you today?"
+}
+```
+
+```bash
+curl -X POST http://localhost:5001/chat -H "Content-Type: application/json" -d '{"user_id": "test", "message": "do you remember my name"}'
+{
+  "reply": "Yes, your name is Juanan."
+}
+```
 
 # Ejemplo 2 de LangGraph Flask
 
